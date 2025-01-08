@@ -1,12 +1,12 @@
 # Thesis Project
 
-This repository contains the code used for my thesis project. The project involves data preprocessing, model building, and analysis using MOFA (Multi-Omics Factor Analysis) and Random Forest models.
+This repository contains the code used for the project. The project involves data preprocessing and model building, including MOFA (Multi-Omics Factor Analysis) and Random Forest model.
 
 ---
 
 ## Overview of Scripts
 
-The scripts are organized to follow the workflow of the thesis project:
+The scripts are organised to follow the workflow of the project:
 
 ### **1. Data Preparation**
 - **`data_split.Rmd`**  
@@ -36,9 +36,9 @@ The scripts are organized to follow the workflow of the thesis project:
 
 ### **5. Functional Analysis**
 - **`GSEA.Rmd`**  
-  Perform Gene Set Enrichment Analysis (GSEA) using the informative features identified from the MOFA model.  
+  Perform Gene Set Enrichment Analysis (GSEA) using important factors identified from the MOFA model.  
 - **`pathway_enrichment.Rmd`**  
-  Conduct pathway enrichment analysis using the informative features identified from the MOFA model.
+  Conduct pathway enrichment analysis using the informative factors identified from the MOFA model.
 
 ### **6. Machine Learning**
 - **`Random_Forest.ipynb`**  
