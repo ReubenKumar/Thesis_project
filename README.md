@@ -1,15 +1,47 @@
-# Thesis_project
-The code used for my thesis project
+# Thesis Project
 
-order of scripts:
-data_split.Rmd        (split data into two subsets one subset for traing the MOFA model, one for training the random forest model)
-RNA_preprocessing.Rmd        (preprocessing the RNA dataset)
-mutation_preprocessing.Rmd        (preprocessing the mutational dataset)
-methylation_preprocessing.Rmd        (preprocessing the methylation dataset)
-cna_preprocessing.Rmd        (preprocessing the CNA dataset)
-MOFA_models.Rmd        (identify the optimal MOFA model, build the optimal MOFA model, factor characterisation)
-extract_features.Rmd        (extract informative features from the MOFA model in relation to the treatment response covariate)
-GSEA.Rmd        (gene set enrichment analysis using interesting features from the MOFA model)
-pathway_enrichment.Rmd        (pathway enrichment analysis using interesting features from the MOFA model)
-Random_Forest.ipynb        (Build and evaluate random forest model using the features extracted from the MOFA model)
+This repository contains the code used for my thesis project. The project involves data preprocessing, model building, and analysis using MOFA (Multi-Omics Factor Analysis) and Random Forest models.
 
+---
+
+## Overview of Scripts
+
+The scripts are organized to follow the workflow of the thesis project:
+
+### **1. Data Preparation**
+- **`data_split.Rmd`**  
+  Splits the dataset into two subsets:  
+  - One subset for training the MOFA model.  
+  - One subset for training the Random Forest model.
+
+### **2. Data Preprocessing**
+- **`RNA_preprocessing.Rmd`**  
+  Preprocessing of the RNA dataset.
+- **`mutation_preprocessing.Rmd`**  
+  Preprocessing of the mutational dataset.
+- **`methylation_preprocessing.Rmd`**  
+  Preprocessing of the methylation dataset.
+- **`cna_preprocessing.Rmd`**  
+  Preprocessing of the Copy Number Alteration (CNA) dataset.
+
+### **3. MOFA Model Development**
+- **`MOFA_models.Rmd`**  
+  - Identify the optimal MOFA model.  
+  - Build the optimal MOFA model.  
+  - Characterize the factors in the model.  
+
+### **4. Feature Extraction**
+- **`extract_features.Rmd`**  
+  Extract informative features from the MOFA model, particularly in relation to the treatment response covariate.
+
+### **5. Functional Analysis**
+- **`GSEA.Rmd`**  
+  Perform Gene Set Enrichment Analysis (GSEA) using the informative features identified from the MOFA model.  
+- **`pathway_enrichment.Rmd`**  
+  Conduct pathway enrichment analysis using the informative features identified from the MOFA model.
+
+### **6. Machine Learning**
+- **`Random_Forest.ipynb`**  
+  - Build and evaluate a Random Forest model using the features extracted from the MOFA model.  
+
+---
